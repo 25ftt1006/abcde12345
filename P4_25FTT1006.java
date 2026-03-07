@@ -11,6 +11,13 @@ public class P4_25FTT1006 {
     }
 
     public static void mathQuiz() {
+        // 4.1 - MathQuiz.java
+        // PURPOSE: To generate random addition and modulus questions for the user, and to keep track of the number of correct answers.
+        // DESCRIPTION HOW IT WORKS
+        // The method uses a loop to generate three random addition and modulus questions. For each question
+        // it generates two random numbers between 0 and 99, calculates the correct answers for both addition and modulus, and prompts the user to input their answers. 
+        // The method then checks if the user's answers are correct, displays whether each answer is true or false.
+
         Scanner input = new Scanner(System.in);
  
         //Repeat questions three times using loop, firstNUm and secNum should be different for each question, and the user should be able to input their answer for each question. After the loop, display the total number of correct answers out of 6 (3 addition questions and 3 modulus questions).
@@ -41,6 +48,13 @@ public class P4_25FTT1006 {
     }
 
     public static void areaOfTriangleGeometry() {
+        // 4.2 - AreaOfTriangleGeometry.java
+        // PURPOSE: To calculate the area of a triangle given its three vertices using a given Math's formula
+        // DESCRIPTION HOW IT WORKS
+        // The method prompts the user to enter the coordinates of the three vertices of a triangle.
+        // It then calculates the lengths of the sides of the triangle using the distance formula, 
+        // and uses the given math formula to calculate the area of the triangle. 
+        // Then it displays the area to the user.
 
         Scanner input = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat("#.0");
@@ -64,6 +78,11 @@ public class P4_25FTT1006 {
     }
 
     public static void reverseOfInteger() {
+        // 4.3 - ReverseOfInteger.java
+        // PURPOSE: To reverse a three-digit integer entered by the user.
+        // DESCRIPTION HOW IT WORKS
+        // The method prompts the user to enter a three-digit integer. It then extracts each digit using modulus and division operations, and combine each digit in reverse order to form the reversed number by concatenating them as a String. 
+        // Then, it displays the reversed number to the user. The method also includes input validation to ensure that the user enters a valid three-digit integer.
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter an integer between 100 and 999: ");
@@ -117,6 +136,16 @@ public class P4_25FTT1006 {
     }
 
     public static void MoneyChanger() {
+        // 4.4 - MoneyChanger.java
+
+        // PURPOSE: To convert an amount of money between Brunei Dollars (BND) and
+        // Malaysian Ringgit (RM) based on user choice.
+
+        // DESCRIPTION HOW IT WORKS
+        // The method prompts the user to choose whether they want to convert from BND to RM or from RM to BND. Based on the user's choice, it then prompts the user to enter the amount of money they want to convert. 
+        // The method performs the conversion using a fixed exchange rate (1 BND = 3 RM) and displays the converted amount to the user. 
+        // The method also includes input validation to ensure that the user enters a valid choice for conversion.
+
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter 1 to convert bnd to rm, and 2 vise versa: ");
@@ -154,6 +183,14 @@ public class P4_25FTT1006 {
     }
 
     public static void priceComparison() {
+        // 4.5 - PriceComparison.java
+
+        // PURPOSE: To compare the price per kilogram of two packages of the same product and determine which one is a better deal.
+
+        // DESCRIPTION HOW IT WORKS
+        // The method prompts the user to enter the price and weight of two packages of the similar product. It then calculates the price per kilogram for each package by dividing the price by the weight.
+        // Then, it compares the price per kilogram of the two packages and displays which package is a better deal or if both packages have the same price per kilogram. 
+
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the price of the 1st package: ");
         double price1 = input.nextDouble();
